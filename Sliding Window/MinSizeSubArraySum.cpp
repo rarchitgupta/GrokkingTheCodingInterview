@@ -7,7 +7,7 @@ int findMinSubArray(int s, const vector<int> &arr)
     for (int windowEnd = 0; windowEnd < arr.size(); windowEnd++)
     {
         windowSum += arr[windowEnd];
-        if (windowSum >= s)
+        while(windowSum >= s)
         {
             minLength = min(minLength, windowEnd - windowStart + 1);
             windowSum -= arr[windowStart];

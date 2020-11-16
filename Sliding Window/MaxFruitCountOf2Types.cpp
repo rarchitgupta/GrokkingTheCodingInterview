@@ -9,7 +9,7 @@ int findFruitCountofTwoTypes(const vector<char> &arr)
     {
         fruitFrequency[arr[windowEnd]]++;
 
-        while ((int)fruitFrequncy.size() > 2)
+        while ((int)fruitFrequency.size() > 2)
         {
             fruitFrequency[arr[windowStart]]--;
             if (fruitFrequency[arr[windowStart]] == 0)
